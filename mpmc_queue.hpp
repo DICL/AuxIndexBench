@@ -1,4 +1,4 @@
-// mpmc_queue.hpp - Bounded lock-free MPMC queue (Vyukov ring buffer).
+// mpmc_queue.hpp - Bounded lock-free MPMC queue (ring buffer).
 //
 // Each cell carries a monotonically advancing sequence number;
 // producers and consumers use a single CAS per operation and busy-spin
@@ -112,4 +112,4 @@ private:
     alignas(CACHELINE) std::atomic<size_t> deq_pos_;
 };
 
-} // namespace aib
+} 
