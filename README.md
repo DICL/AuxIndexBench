@@ -1,4 +1,6 @@
-# Auxiliary-Index Benchmark (v1)
+# Revisiting Index Performance under High Cache-Miss Pressure
+
+## Auxiliary-Index Benchmark (v1)
 
 A microbenchmark that evaluates index data structures **as auxiliary
 access paths in larger applications**, rather than as standalone
@@ -11,7 +13,7 @@ workloads.
   driven through the benchmark. Built-in B+tree and chaining hash table
   are now adapters behind this interface.
 * **External-index adapter stubs** for nine PMEM-resident B+tree
-  variants: wB+Tree, FAST&FAIR, FPTree, BzTree, LB+Tree, uTree,
+  variants: wB+Tree, FAST&FAIR, FPTree, BzTree, LB+Tree, µTree,
   Circ-Tree, DPTree, NBTree. Each is opt-in via `WITH_<NAME>=1`.
   See `EXTERNAL_INDEXES.md` for the wiring guide.
 * Four post-lookup workload modes: none, polluter, object access,
@@ -77,7 +79,7 @@ pollution interactions.
 
 ## Files
 
-```
+```text
 index.hpp              Built-in B+tree
 hash_index.hpp         Built-in chaining hash table
 hash_key_gen.hpp       Bit-bias synthetic key generator
