@@ -1,10 +1,10 @@
-# Auxiliary-Index Benchmark (v5)
+# Auxiliary-Index Benchmark (v1)
 
 A microbenchmark that evaluates index data structures **as auxiliary
 access paths in larger applications**, rather than as standalone
 workloads.
 
-## What v5 contains
+## What v1 contains
 
 * **Plugin index interface** (`IIndex` in `index_iface.hpp`): any index
   that implements `lookup / update / insert / remove / scan` can be
@@ -100,7 +100,7 @@ Makefile               Default + per-index opt-in build flags
 paper/                 Paper draft (Markdown + LaTeX + PDF)
 slides/                Slide deck (Markdown + Beamer + PDF)
 EXTERNAL_INDEXES.md    Wiring guide for the nine external adapters
-V4_NOTES.md            Hash index / skewed-key addendum
+V1_NOTES.md            Hash index / skewed-key addendum
 ```
 
 ## Caveats
