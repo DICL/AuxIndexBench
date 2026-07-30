@@ -100,7 +100,6 @@ Makefile               Default + per-index opt-in build flags
 paper/                 Paper draft (Markdown + LaTeX + PDF)
 slides/                Slide deck (Markdown + Beamer + PDF)
 EXTERNAL_INDEXES.md    Wiring guide for the nine external adapters
-V1_NOTES.md            Hash index / skewed-key addendum
 ```
 
 ## Caveats
